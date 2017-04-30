@@ -4,10 +4,10 @@ import sys, time
 class ProgressBar:
     """
     Usage:
-    pm = ProgressBar(n)
+    pb = ProgressBar(n)
     for i in range(n):
         do_some_action()
-        pm.advance()
+        pb.advance()
     """
 
     def __init__(self, size, **opt):
