@@ -14,7 +14,7 @@ def callback(pb):
     t = pb.seconds
     p = pb.percent
 
-    if i%500000 == 0:
+    if p%20 == 0:
         print("Hi from callback: index=%d, time=%.2f seconds, percent=%d%%" % (i,t,p))
 
     if t > 100:
