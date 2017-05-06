@@ -1,5 +1,5 @@
 import time
-import math
+from math import sin
 from ezprogbar import ProgressBar
 
 def test1():
@@ -25,7 +25,7 @@ def test2():
     pb = ProgressBar(n, callback=callback)
     s = 0.0
     for i in range(n):
-        s += 1.0/(1 + i**(2+math.sin(i)))
+        s += 1.0/(1 + i**(2+sin(i)))
         pb.advance()
 
     print("Result: s = %.6f" % (s,))
